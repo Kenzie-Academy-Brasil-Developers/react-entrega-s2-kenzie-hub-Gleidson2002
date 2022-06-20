@@ -1,0 +1,154 @@
+#contenthome {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#headerhome {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+
+#sairhome {
+    cursor: pointer;
+    background: #212529;
+    width: 55.49px;
+    height: 32px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 28px;
+    color: #F8F9FA;
+}
+
+#nome {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F8F9FA;
+    padding: 20px;
+}
+
+#nomem {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #868E96;
+    padding: 20px;
+}
+
+#nomemodulo {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+
+#titulotec {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: #F8F9FA;
+    padding: 20px;
+    margin: 0;
+}
+
+#btnadicionar {
+    cursor: pointer;
+    color: #F8F9FA;
+    margin: 0;
+    background-color: #212529;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 25px;
+    border-radius: 10px;
+
+}
+
+#tadicionar {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#modal1 {
+    width: 50px;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+.cardtitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+#contenttechs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 416px;
+    background: #212529;
+    border-radius: 10px;
+    
+}
+
+.cardtech {
+    display: flex;
+    flex-direction: row;
+    background: #121214;
+    border-radius: 3px;
+    height: 50px;
+    margin: 15px;
+}
+
+.cardstatus {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: auto;
+    color: #868E96;
+    margin-right: 20px;
+}
+.btnexcluircard{
+    color: white;
+    background-color:#121215;
+    border: none;
+    margin-right: 20px;
+}
+.btnexcluircard:hover{
+    cursor: pointer;
+}
+#contenttechs{
+    overflow-y: scroll;
+    height: 500px;
+}
+::-webkit-scrollbar { 
+    display: none;
+  }
+  @media only screen and (max-width: 600px) {
+   #contenthome{
+    width: 100%;
+   }
+   #tecnologias{
+    padding-bottom: 20px;
+   }
+  }

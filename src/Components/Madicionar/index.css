@@ -1,0 +1,103 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+}
+
+#Mcontainer {
+    background-color: #212529;
+    width: 360px;
+    height: 330px;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+.Mheader {
+    display: flex;
+    justify-content: space-between;
+    background-color: #343B41;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.Mtitulo {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #F8F9FA;
+    margin-left: 20px;
+}
+
+.Mfechar {
+    width: 50px;
+    background-color: #343B41;
+    border: none;
+    color: #868E96;
+    height: 50px;
+    margin-right: 10px;
+}
+.Mfechar:hover{
+    cursor: pointer;
+}
+
+.Topcoes {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.182px;
+
+    color: #F8F9FA;
+}
+
+#formMtec {
+    padding: 20px;
+}
+
+#MInome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 16.2426px;
+    gap: 10.15px;
+    color: white;
+    width: 90%;
+    height: 48px;
+    background: #343B41;
+    border: 1.2182px solid #F8F9FA;
+    border-radius: 4px;
+}
+
+#Sstatus {
+    color: white;
+    width: 101%;
+    height: 48px;
+    background: #343B41;
+    border: 1.2182px solid #F8F9FA;
+    border-radius: 4px;
+}
+
+.btnmodal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 22.3336px;
+    gap: 10.15px;
+    width: 324px;
+    height: 48px;
+    background: #FF577F;
+    border: 1.2182px solid #FF577F;
+    border-radius: 4.06066px;
+    color: white;
+    margin-top: 10px;
+}
