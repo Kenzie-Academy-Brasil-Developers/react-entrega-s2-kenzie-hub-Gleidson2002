@@ -148,6 +148,36 @@
    #contenthome{
     width: 100%;
    }
+   #Mcontainer{
+    width: 90%;
+   }
+   
+   .btnmodal{
+    width: 100%;
+   }
+   #MInome{
+    width: 87%;
+   }
+   #sairhome{
+    border: none;
+    border-radius: 5px;
+   }
+   #nome{
+    margin: 0;
+   }
+   #nomem{
+    text-align: center;
+    margin: 0;
+   }
+   #btnadicionar{
+    margin-right: 20px;
+    background-color: #212529;
+    border: none;
+   }
+   .modal{
+    width: 100%;
+   }
+
    #tecnologias{
     padding-bottom: 20px;
    }

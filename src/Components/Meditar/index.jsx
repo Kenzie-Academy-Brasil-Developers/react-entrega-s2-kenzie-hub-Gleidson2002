@@ -6,14 +6,9 @@ import { alterartech } from "../Api";
 function Meditar ({setmodalvisible2,dados,token,setdados}){
     let status=dados.status
     
-
-
     function submittec(data){
         console.log("hi")
         alterartech(dados.id,token,data,setmodalvisible2)
-        
-        
-       
     }
 
     const formschema = yup.object().shape({
@@ -33,7 +28,6 @@ function Meditar ({setmodalvisible2,dados,token,setdados}){
                 <button onClick={()=>setmodalvisible2(false)} className="Mfechar">X</button>
             </div>
             <div>
-
                 <form onSubmit={handleSubmit(submittec)} id="formMtec">
                    <p className="Topcoes">Selecionar status</p>
                    <select id="Sstatus" defaultValue={status}{...register("status")}>
@@ -41,9 +35,7 @@ function Meditar ({setmodalvisible2,dados,token,setdados}){
                     <option value="Intermediário">Intermediário</option>
                     <option value="Avançado">Avançado</option>
                    </select>
-
                    <button type="submit" className="btnmodal">Atualizar técnologia</button>
-                  
                 </form>
                 
 
