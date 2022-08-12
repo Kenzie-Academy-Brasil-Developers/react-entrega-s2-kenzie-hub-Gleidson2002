@@ -9,7 +9,14 @@
 
 
 }
-
+#btncadastrese:hover{
+    cursor:pointer;
+}#buttonentrar:hover{
+    cursor:pointer;
+}
+#btncadastrese:hover{
+    cursor:pointer;
+}
 #headertitulo {
     color: #FF577F;
 }
@@ -75,6 +82,7 @@ body {
     border-radius: 4.06066px;
 
 }
+
 
 #pdeconta {
     font-family: 'Inter';

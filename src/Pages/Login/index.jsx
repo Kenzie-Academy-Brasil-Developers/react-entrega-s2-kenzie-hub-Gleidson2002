@@ -4,7 +4,11 @@ import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { Loginapi } from "../../Components/Api";
 import { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function Login({history}) {
+  
   const [alert,setalert]= useState("")
    const formschema = yup.object().shape(
     {
@@ -14,10 +18,12 @@ function Login({history}) {
    )
    const {register,handleSubmit,formState:{errors}}= useForm({resolver:yupResolver(formschema)})
    function verificardados(data){
+    toast.success("Sucesso")
     Loginapi(data,history,setalert)
    }
   return (
     <div id="content">
+      <ToastContainer/>
       <header id="headertitulo">
         <h1 id="titulo">Kenzie Hub</h1>
       </header>

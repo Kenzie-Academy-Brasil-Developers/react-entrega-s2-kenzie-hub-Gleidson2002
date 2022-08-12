@@ -3,6 +3,8 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import "./index.css";
 import { Registerapi } from "../../Components/Api";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Cadastro({ history }) {
   const formschema = yup.object().shape({
@@ -16,7 +18,8 @@ function Cadastro({ history }) {
 
   });
   function verificardados(data) {
-    console.log(Registerapi(data,history))
+
+    Registerapi(data,history)
   }
 
   const { register, handleSubmit } = useForm({
@@ -25,6 +28,7 @@ function Cadastro({ history }) {
 
   return (
     <div id="content">
+      <ToastContainer/>
       <header id="header">
         <h1 id="titulo">Kenzie Hub</h1>{" "}
         <button onClick={() => history.push("/")} id="btnvoltar">

@@ -3,8 +3,12 @@ import { GetUsers, deletartech} from "../../Components/Api"
 import Madicionar from "../../Components/Madicionar"
 import Meditar from "../../Components/Meditar"
 import "./index.css"
+import { ToastContainer,toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Home({history}){
+
+    
      const token = localStorage.getItem("token")
      const userid = localStorage.getItem("userid")
      const [ismodalvisible, setmodalvisible]= useState(false)
@@ -35,6 +39,8 @@ function Home({history}){
     return(
      
         <div id="contenthome">
+            <ToastContainer/>
+            
         <header id="headerhome">
             <h1 id="titulo">Kenzie Hub</h1>
             <button id="sairhome" onClick={()=>voltar()}>Sair</button>

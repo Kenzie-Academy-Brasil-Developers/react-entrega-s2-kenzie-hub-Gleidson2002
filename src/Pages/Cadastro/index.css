@@ -55,6 +55,9 @@
     color: #FFFFFF;
     margin-top: 20px;
 }
+#submitregistrar:hover{
+    cursor: pointer;
+}
 
 #tituloR {
     font-family: 'Inter';

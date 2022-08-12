@@ -1,4 +1,6 @@
 import axios from "axios";
+import { toast } from "react-toastify";
+
 
 
 
@@ -13,7 +15,10 @@ const Loginapi = (data,history,setalert) => {
       localStorage.setItem("userid",res.data.user.id)
       localStorage.setItem("token",res.data.token)
 
-      if(res.status===200){history.push("/home")}
+      if(res.status===200){
+        toast.success("Sucesso")
+        
+        history.push("/home")}
       
   })
   .catch((err)=>err.code==='ERR_BAD_REQUEST'?setalert("Verifique seus dados ou cadastre-se"):"")
@@ -40,19 +45,18 @@ const Registerapi = (data,history) => {
     .then((res)=> res.status===201?history.push("/"):'')
 }
 const criartech = (token,data)=>{
- console.log(data)
- console.log(token)
+ 
   axios.post("https://kenziehub.herokuapp.com/users/techs",data,
   {headers:{
     Authorization:`Bearer ${token}`
-  }}).then((res)=>console.log(res)).catch((err)=>console.log(err))
+  }}).then((res)=>toast.success("Tech criada")).catch((err)=>console.log(err))
 }
 
 const deletartech = (techid,token)=>{
   axios.delete(`https://kenziehub.herokuapp.com/users/techs/${techid}`,{
     headers:{
       Authorization:`Bearer ${token}`
-    }}).then((res)=>console.log(res)).catch((err)=>console.log(err))
+    }}).then((res)=>toast.success("Tech deletada")).catch((err)=>console.log(err))
 
 }
 const alterartech = (techid,token,data,setmodalvisible2)=>{
@@ -61,7 +65,9 @@ const alterartech = (techid,token,data,setmodalvisible2)=>{
       Authorization:`Bearer ${token}`
     }}).then((res)=>{
       if(res.status===201){
+        toast.success("Tech alterada com sucesso")
         setmodalvisible2(false)
+
 
       }
     })
