@@ -18,7 +18,7 @@ function Login({history}) {
    )
    const {register,handleSubmit,formState:{errors}}= useForm({resolver:yupResolver(formschema)})
    function verificardados(data){
-    toast.success("Sucesso")
+    
     Loginapi(data,history,setalert)
    }
   return (

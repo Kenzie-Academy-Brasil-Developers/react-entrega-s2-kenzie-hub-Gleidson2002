@@ -21,7 +21,8 @@ const Loginapi = (data,history,setalert) => {
         history.push("/home")}
       
   })
-  .catch((err)=>err.code==='ERR_BAD_REQUEST'?setalert("Verifique seus dados ou cadastre-se"):"")
+  .catch((err)=>{setalert("Verifique seus dados ou cadastre-se") 
+  toast.error("Algo deu errado")})
     
 }
 
